@@ -55,3 +55,17 @@ INNER JOIN Orders
     ON Customers.CustomerID = Orders.CustomerID
 GROUP BY Customers.CustomerID, CustomerName
 ORDER BY Number_Of_Orders DESC;
+```
+### Query Results
+
+![Customer Order Volume Results](images/customer_order_volume.png)
+
+### Results Summary
+
+The analysis returned **74 customers** with recorded orders.
+
+**Key insights**
+
+- Ernst Handel placed 10 orders.
+- Multiple customers placed between 6–7 orders.
+- Sales managers can use this information to balance workloads and identify high-value customer relationships.
