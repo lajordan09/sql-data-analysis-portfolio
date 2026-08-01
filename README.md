@@ -47,6 +47,29 @@ WHERE Orders.OrderID IN (10372, 10424, 10417, 10324, 10351)
 GROUP BY Orders.OrderID, LastName, FirstName
 ORDER BY SalesAmt DESC;
 ```
+### Query Results
+
+![Sales Order & Employee Performance Analysis Results](images/sales_order_employee_analysis.png)
+
+### Results Summary
+
+The analysis evaluated **five targeted sales orders** and calculated the total sales amount for each order by multiplying product quantity by unit price. It then linked each order to the responsible sales representative and ranked the results by total sales.
+
+| Sales Representative | Order ID | Total Sales |
+|----------------------|---------:|------------:|
+| Steven Buchanan | 10372 | $15,353.60 |
+| Robert King | 10424 | $14,366.50 |
+| Margaret Peacock | 10417 | $14,104.00 |
+| Anne Dodsworth | 10324 | $7,698.45 |
+| Nancy Davolio | 10351 | $7,103.60 |
+
+### Key Insights
+
+- Steven Buchanan processed the highest-value order at **$15,353.60**.
+- The top three orders each generated more than **$14,000** in sales.
+- The query demonstrates how SQL joins multiple tables to connect employees, orders, products, and order details into a single business report.
+- This analysis can support sales performance reporting, revenue tracking, and management decision-making.
+---
 ### Query 2: Customer Order Volume Summary
 ```sql
 SELECT CustomerName, COUNT(OrderID) AS Number_Of_Orders
