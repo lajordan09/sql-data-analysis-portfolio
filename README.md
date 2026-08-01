@@ -35,6 +35,11 @@ This repository contains a structured walkthrough of multi-step SQL data analysi
 
 ### Query 1: Sales Analysis by Target Order ID
 ```sql
+--CREATED BY: LAQUITA JORDAN
+--CREATE ON: 8/1/2026
+--DESCRIPTION: Which specific target orders generated the highest total sales, and which sales
+--representatives were responsible for processing them?
+
 SELECT LastName, FirstName, Orders.OrderID, SUM(Quantity * Price) AS SalesAmt
 FROM Employees
     INNER JOIN Orders 
@@ -72,6 +77,11 @@ The analysis evaluated **five targeted sales orders** and calculated the total s
 ---
 ### Query 2: Customer Order Volume Summary
 ```sql
+--CREATED BY: LAQUITA JORDAN
+--CREATE ON: 8/1/2026
+--DESCRIPTION: How many total orders have been placed by each customer so that sales management can
+--effectively assign customer accounts to new sales representatives?
+
 SELECT CustomerName, COUNT(OrderID) AS Number_Of_Orders
 FROM Customers
 INNER JOIN Orders 
