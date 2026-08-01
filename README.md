@@ -1,6 +1,6 @@
 # SQL Data Analysis & Business Intelligence Portfolio
 
-This repository contains a structured walkthrough of multi-step SQL data analysis projects. It demonstrates how to query, join, aggregate, and filter relational database tables to solve core business problems using the W3Schools (Northwind) database environment.
+This repository contains a structured walkthrough of multi-step SQL data analysis projects. It demonstrates how to query, join, aggregate, and filter relational database tables to solve core business problems using the W3Schools (Northwind) database environment and Coursera's Guided Project.
 
 ---
 
@@ -92,3 +92,11 @@ The analysis returned **74 customers** with recorded orders.
 - Ernst Handel placed 10 orders.
 - Multiple customers placed between 6–7 orders.
 - Sales managers can use this information to balance workloads and identify high-value customer relationships.
+
+---
+
+**LaQuita Jordan**  
+M.S. Data Analytics Student | U.S. Navy Veteran
+
+Building a portfolio of SQL, Python, and Power BI projects that solve real business problems.
+
